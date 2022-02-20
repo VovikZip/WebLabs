@@ -1,0 +1,76 @@
+@import url(./media.css);
+
+.coffee{
+    background-image:  url(./img/back3.jpg) ;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    margin-right: 5px;
+}
+
+.coffee_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+
+
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card{
+    margin-left: 25px;
+    padding-top: 20px;
+    padding-right: 10px;
+    height: 130px;
+    width: 370px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 5px rgb(252, 243, 205);;
+}
+
+.head{
+    font-size: 40px;
+}
+
+.subhead{
+    font-size: 20px;
+}
+
+.top_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.price{
+    color: rgb(207, 170, 4);
+}
+
+.bottom_card{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
