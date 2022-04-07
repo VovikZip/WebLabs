@@ -1,87 +1,41 @@
-@import url(./media.css);
-
-header{
+*{
+    margin: 0px;
+}
+.main{
     width: 100%;
-    display: flex;
-    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6));
-}
-
-.header-logo{
-    color: #fff;
-    font-weight: 4000;
-    font-size: 24px;
-    cursor: pointer;
-    margin-top: 30px;
-    margin-left: 8%;
-    padding-bottom: 5px;
-}
-
-nav{
-    margin-top: 50px;
-    margin-left: 42%;
-}
-
-.topnav a{
-    color: #fff;
-    padding: 15px 20px;
-    font-size: 14px;
-    font-weight: thin;
-}
-
-.topnav a:hover{
-    border-bottom: 4px solid hsl(41, 96%, 42%);
-}
-
-.topnav .icon{
-    display: none;
-}
-
-.back_coffee{
-    background-image: url(./img/cava3.jpg);
-    background-size: cover;
-}
-
-main{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    color: rgb(214, 214, 214);
+    font-size: 30px;
+    text-align: center;
+}
+.main__top{
+    display: flex;   
+    height: 318px;    
+}
+.main__item{
+    height: 318px;
+    width: 50%;
 }
 
-.main_welcome{
-    margin-left: 8%;
-    margin-right: 60%;
-    margin-top: 90px;
+.main__item_viol{
+    background-color: hsl(262, 96%, 63%);
+}
+
+.main__item_blue{
+    background-color: #178ef6;
+}
+
+.main__medium{
+    height: 318px;
+    background-color: rgb(144, 198, 245);
+}
+
+.main__bottom{
     height: 300px;
-    color: #fff;
+    background-color: #178ef6;
 }
 
-.zagolovok{
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
+.main__bottom img{
+    height: 300px;
 }
-
-.zagolovok1{
-    font-size: 32px;
-    font-weight: bold;
-
-}
-
-.text{
-    padding-left: 20px;
-    padding-top: 10px;
-    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
-}
-
-.buy-butt{
-    min-width: 90px; 
-    width: 20%; 
-    height: 40px;
-    border-radius: 20px;
-    font-weight: 500;
-    margin-top: 7px;
-    margin-bottom: 10px;
-    background: #fff;
-}
-
-    
