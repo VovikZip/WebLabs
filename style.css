@@ -26,3 +26,30 @@
     top: 535px;
     border-radius: 5%;
 }
+
+.red__second{
+    background-color: red;
+    transform: translate(410px, 90px);
+    width: 250px;
+    height: 250px;
+
+}
+
+.vertical__second{
+    background-color: white;
+    width: 50px;
+    height: 180px;
+    transform: translate(512px, -175px);
+    border-radius: 5%;
+
+}
+
+.horizontal__second{
+    background-color: white;
+    width: 180px;
+    height: 50px;
+    transform: translate(448px, -60px);
+    border-radius: 5%;
+    
+
+}
