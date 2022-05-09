@@ -1,0 +1,55 @@
+@import url(./media.css);
+
+.pages{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+
+}
+
+.bottom_pages{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 100px;
+
+}
+
+.side{
+    width: 60%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.medium_part{
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom_butt{
+    margin-left: 10px;
+    width: 100px;
+    height: 30px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.img_part img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.text_part{
+    padding-left: 10px;
+}
+
+
+
+
+
