@@ -1,0 +1,22 @@
+.remove {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.default {
+    width: 750px;
+    height: 400px;
+}
+
+.small-size {
+    height: 250px;
+    width: 500px;
+}
+
+.big-size {
+    width: 1050px;
+    height: 800px;
+}

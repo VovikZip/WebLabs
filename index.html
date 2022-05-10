@@ -5,12 +5,13 @@
     <meta name="description" content="My personal website containing useful information about me">
     <meta name="keywords" content="HTML, resume, website, KPI, FICT">  
     <title>Альошкін В. А. ІА-93</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h2>Альошкін Володимир Анатолійович.</h2>
     <p>Місце та дата народження: 2 червня 2002р. м. Умань, Черкаська обл.</p>
-    <p>Освіта: Уманська ЗОШ №9</p>
-    <p style="padding-left: 55px;">Національний технічний університет України «Київський політехнічний інститут імені Ігоря Сікорського»</p>
+    <p id="first" ">Освіта: Уманська ЗОШ №9</p>
+    <p style="padding-left: 55px;" id="second" >Національний технічний університет України «Київський політехнічний інститут імені Ігоря Сікорського»</p>
     <p>Хоббі:</p>
     <ul>
         <li>Мотоспорт</li>
@@ -29,9 +30,14 @@
        Львів вражає численними музеями, величними соборами, неймовірними рестораціями, та людьми…...
     </p>
     <p>
-        <a href="https://uk.wikipedia.org/wiki/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2"><img src="assets/lviv.jpg" width="750" 
-        height="400" alt="Львів"></a>
+        <a href="https://uk.wikipedia.org/wiki/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2"><img id="lviv" class="default visible" src="assets/lviv.jpg" alt="Львів"></a>
     </p>
+    <button class="add">Додати</button>
+    <button class="delete">Видалити</button>
+    <button class="increase">Збільшити</button>
+    <button class="decrease">Зменшити</button>
+
+    <script src="/script.js"></script>
 
 </body>
 </html>
