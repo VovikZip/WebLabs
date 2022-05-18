@@ -21,8 +21,7 @@ function getUser(results) {
         <img src="${el.picture.large}" width="200px" height="200px">
         <p>Location: ${el.location.street.name}, ${el.location.street.number}</p>
         <p>City: ${el.location.city}, ${el.location.country}</p>
-        <p>E-mail: ${el.email}</p>
-        <p>Coordinates: ${el.location.coordinates.latitude}, ${el.location.coordinates.longitude}</p>
+        <p>Postcode: ${el.location.postcode}</p>
         </div>
     `)
 }
