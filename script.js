@@ -1,72 +1,72 @@
-const first = document.getElementById("first");
-const second = document.querySelector("#second");
+let regName = /[А-Я-ІЄ][а-я-іє]{1,20}\s[А-Я-ІЄ]\.[А-Я-ІЄ]\./,
+    regGroup = /[А-Я-ІЄ]{2}\-[1-9]{2}/,
+    regFaculty = /[А-Я-ІЄ]{4}/,
+    regNum = /\([0-9]{3}\)\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}/,
+    regAdress = /[м]\.\s[А-Я-ІЄ][а-я-іє]{1,20}/,
+    redMail = /[a-z]{20}\@[a-z]{7}\.[com]{3}/,
+    regCard = /[А-Я-ІЄ]{2}\s\№[1-9]{6}/;
 
-first.onclick = firstClick;
-second.onclick = secondClick;
 
-function firstClick (){
+let inpName = document.querySelector("#name");
+let inpGroup = document.querySelector("#group");
+let inpFaculty = document.querySelector("#faculty");
+let inpNum = document.querySelector("#num");
+let inpCard = document.querySelector("#card");
+
+document.querySelector(".submit").onclick = function(e){
+    e.preventDefault();
+    if (regName.test(inpName.value) && regGroup.test(inpGroup.value) && 
+        regFaculty.test(inpFaculty.value) && regCard.test(inpCard.value) && 
+        regNum.test(inpNum.value) ) {
+        console.log("corect");
+        submit();
+    }else {
+        console.log("error");
+    }
+
+};
+
+function submit(){
+    alert(`Ім'я: ${inpName.value}
+Група: ${inpGroup.value}
+Факультет: ${inpFaculty.value}
+Номер телефону: ${inpNum.value}
+ID-карта: ${inpCard.value}
+`)
+}
+
+const titl = document.getElementById('c1');
+
+titl.onmouseover = function() {
     let randomColor = '#'+ Math.floor(Math.random() * 19777215).toString(16);
     let randColor = '#'+ Math.floor(Math.random() * 19777215).toString(16);
-    first.style.background = randomColor;
-    first.style.color = randColor;
+    titl.style.backgroundColor = randColor;
+    titl.style.color = randomColor;
 }
 
-function secondClick (){
-    let randomColor = '#'+ Math.floor(Math.random() * 19777215).toString(16);
-    let randColor = '#'+ Math.floor(Math.random() * 19777215).toString(16);
-    second.style.background = randomColor;
-    second.style.color = randColor;
+const cell2 = document.getElementById('c9');
+
+const three = document.getElementById('c3');
+const fifteen = document.getElementById('c15');
+const twentyOne = document.getElementById('c21');
+const twentySeven = document.getElementById('c27');
+const thirtyThree = document.getElementById('c33');
+
+three.ondblclick = function() {
+    three.style.background = color.value;
+    cell2.style.background = color.value;
+    fifteen.style.background = color.value;
+    twentyOne.style.background = color.value;
+    twentySeven.style.background = color.value;
+    thirtyThree.style.background = color.value;
+}
+function setColor() {
+    const color = document.getElementById("color");
 }
 
-
-
-
-const image = document.querySelector('#lviv');
-document.querySelector('.add').addEventListener('click', () => add());
-document.querySelector('.delete').addEventListener('click', () => remove());
-document.querySelector('.increase').addEventListener('click', () => increase());
-document.querySelector('.decrease').addEventListener('click', () => decrease());
-
-function increase() {
-    if(image.classList.contains('small-size')) {
-        image.classList.remove('small-size');
-        image.classList.add('default');
-    }
-    else if(image.classList.contains('default')) {
-        image.classList.remove('default');
-        image.classList.add('big-size');
-    }
-    else {
-        alert("You cannot increase the image anymore!");
-        return
-    }
+three.onclick = function() {
+    three.style.background = color.value;
 }
 
-function decrease() {
-    if(image.classList.contains('big-size')) {
-        image.classList.remove('big-size');
-        image.classList.add('default');
-    }
-    else if(image.classList.contains('default')) {
-        image.classList.remove('default');
-        image.classList.add('small-size');
-    }
-    else {
-        alert("You cannot decrease the image anymore!");
-        return
-    }
-}
-
-function remove() {
-    if(image.classList.contains('visible')) {
-        image.classList.remove('visible');
-        image.classList.add('remove');
-    }
-}
-
-function add() {
-    if(image.classList.contains('remove')) {
-        image.classList.remove('remove');
-        image.classList.add('visible');
-    }
-}
+console.log({valueOf:()=>5}+1===6);
+console.log()
